@@ -295,10 +295,10 @@ class MainMenuState extends MusicBeatState
 							#if DOWNLOAD_ALLOWED
 							case 'download':
 							    MusicBeatState.resetState();
-							    FlxG.openUrl('https://gamebanana.com/mods/44194');
+							    FlxG.openURL('https://gamebanana.com/mods/44194');
 							#elseif desktop
 							    MusicBeatState.resetState();
-							    FlxG.openUrl('https://gamebanana.com/mods/44194');
+							    FlxG.openURL('https://gamebanana.com/mods/44194');
 							#end
 
 							#if ACHIEVEMENTS_ALLOWED
