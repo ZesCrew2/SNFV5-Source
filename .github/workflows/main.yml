@@ -83,12 +83,13 @@ jobs:
           haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666
           haxelib list
-          haxelib run lime build html5
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
         shell: cmd
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
+      - name: Compile
+        run: haxelib run lime build html5 --app-version="4.0.0-${{ github.run_id}}"  -D 
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: HTML5 Build
