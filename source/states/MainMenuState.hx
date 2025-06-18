@@ -292,9 +292,13 @@ class MainMenuState extends MusicBeatState
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
 
-							#if MODS_ALLOWED
+							#if DOWNLOAD_ALLOWED
 							case 'download':
-								MusicBeatState.switchState(new ModsMenuState());
+							    MusicBeatState.resetState();
+							    FlxG.openUrl('https://gamebanana.com/mods/44194');
+							#elseif desktop
+							    MusicBeatState.resetState();
+							    FlxG.openUrl('https://gamebanana.com/mods/44194');
 							#end
 
 							#if ACHIEVEMENTS_ALLOWED
