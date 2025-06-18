@@ -50,6 +50,34 @@ jobs:
         with:
           name: linuxBuild
           path: 'export/release/linux/bin'
+  buildHtml:
+    runs-on: html-latest
+
+    steps:
+      - uses: action/checkout@4.1.7
+
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.4
+      - name: Install Haxelib
+        run: |
+          haxelib setup C:/haxelib
+          haxelib install hxcpp > /dev/null --quiet
+          .\"setup/windows.bat"
+        shell: cmd
+      - name: Skip SScript setup mode
+        run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
+        shell: cmd
+      - name: Create Version Tag
+        run: echo "${{github.run_id}}" > VERSION
+      - name: Compile
+        run: haxelib run lime build html5 --app-version="4.0.0-${{ github.run_id}}"  -D 
+      - name: Publish Artifact
+        uses: actions/upload-artifact@v4.3.4
+        with:
+          name: htmlBuild
+          path: export/release/html5/bin
+        
   buildWindows:
     runs-on: windows-latest
 
