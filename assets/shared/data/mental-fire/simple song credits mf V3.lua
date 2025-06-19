@@ -1,5 +1,5 @@
 composer = "Walikon" -- This goes for each song, you have to adjust the names.
-charter = "Herox" -- This goes for each song, you have to adjust the names.
+charter = "Syn (Charter), Herox" -- This goes for each song, you have to adjust the names.
 artist = "muganimate, ZesCrew2" -- This goes for each song, you have to adjust the names.
 animator = "muganimate, ZesCrew2" -- This goes for each song, you have to adjust the names.
 va = "muganimate, yungtron" -- This goes for each song, you have to adjust the names.
