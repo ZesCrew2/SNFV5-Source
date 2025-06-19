@@ -1,5 +1,5 @@
 composer = "Walikon" -- This goes for each song, you have to adjust the names.
-charter = "Monoaether (Events), Herox" -- This goes for each song, you have to adjust the names.
+charter = "Herox" -- This goes for each song, you have to adjust the names.
 artist = "muganimate, ZesCrew2" -- This goes for each song, you have to adjust the names.
 animator = "muganimate, ZesCrew2" -- This goes for each song, you have to adjust the names.
 va = "muganimate, yungtron" -- This goes for each song, you have to adjust the names.
@@ -77,7 +77,7 @@ setObjectCamera('songCredits', 'camHUD');
 	
 	else
 		if isCustomBPMName == false then
-		makeLuaText('songCreditsRest', composer.." (Composer)\n"..charter.." (Charter)\nBPM: "..bpm, 0, -1000, 255);
+		makeLuaText('songCreditsRest', composer.." (Composer)\n"..charter.." (Charter, Events)\nBPM: "..bpm, 0, -1000, 255);
 		else
 		makeLuaText('songCreditsRest', composer.." (Composer)\n"..charter.." (Charter)\nBPM: "..customBPMName, 0, -1000, 255);
 		end
