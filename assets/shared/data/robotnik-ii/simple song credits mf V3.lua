@@ -16,7 +16,7 @@ elseif songName == "Blasted Hedgehog" then
 makeLuaSprite('blackBars', 'plate', -1000, -150);
 elseif songName == "Dithering Dingbots" then
 makeLuaSprite('blackBars', 'plate', -1000, -150);
-elseif songName == "robotnik-ii" then
+elseif songName == "Robotnik ii" then
 makeLuaSprite('blackBars', 'plate', -1000, -150);
 else
 makeLuaSprite('blackBars', 'plate', -1000, -25);
@@ -35,7 +35,7 @@ setObjectCamera('blackBars', 'camHUD');
 	elseif songName == "Dithering Dingbots" then
 	makeLuaText('songCredits', songName, 0, -1000, 100-25);
 	
-	elseif songName == "robotnik-ii" then
+	elseif songName == "Robotnik ii" then
 	makeLuaText('songCredits', songName, 0, -1000, 100-25);
 	
 	else
@@ -68,7 +68,7 @@ setObjectCamera('songCredits', 'camHUD');
 		makeLuaText('songCreditsRest', composer.." (Composer)\n"..charter.." (Charter)\nBPM: "..customBPMName, 0, -1000, 100+25);
 		end
 	
-	elseif songName == "robotnik-ii" then
+	elseif songName == "Robotnik ii" then
 		if isCustomBPMName == false then
 		makeLuaText('songCreditsRest', composer.." (Composer)\n"..charter.." (Charter)\nBPM: "..bpm, 0, -1000, 100+50);
 		else
@@ -100,8 +100,8 @@ setObjectCamera('songCreditsRest', 'camHUD');
 	makeLuaText('songCreditsRest2', artist.." (Artist)\n"..animator.." (Animator)\n"..va.." (VA)\nHerox (Card Info Coder)", 0, -1000, 100+200);
 	setTextSize('songCreditsRest2', 30);
 		
-	elseif songName == "robotnik-ii" then
-	makeLuaText('songCreditsRest2', artist.." (Artist)\n"..animator.." (Animator)\n"..va.." (VA)\nHerox (Card Info Coder)", 0, -1000, 100+200);
+	elseif songName == "Robotnik ii" then
+	makeLuaText('songCreditsRest2', artist.." (Artist)\n"..animator.." (Animator)\n"..va.." (VA)\nHerox (Card Info Coder)", 0, -1300, 100+200);
 	setTextSize('songCreditsRest2', 30);
 	
 	else
@@ -123,7 +123,7 @@ function onSongStart()
 		doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', -25, 1, 'sineInOut')
 		elseif songName == "Dithering Dingbots" then
 		doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', -25, 1, 'sineInOut')
-		elseif songName == "robotnik-ii" then
+		elseif songName == "Robotnik ii" then
 		doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', -25, 1, 'sineInOut')
 		else
 		doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', 25, 1, 'sineInOut')
@@ -136,7 +136,7 @@ function onTimerCompleted(tag)
 	if tag == 'bye credits' then
 	doTweenX("no way wow it's the credits itself!!", 'songCredits', -1000, 1, 'quartIn')
 	doTweenX("no way wow it's the credits itself 0!!", 'songCreditsRest', -1000, 1, 'quartIn')
-	doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', -1000, 1, 'quartIn')
+	doTweenX("no way wow it's the credits itself 1!!", 'songCreditsRest2', -1300, 1, 'quartIn')
 	doTweenX("no way wow it's the credits itself 2!!", 'blackBars', -1000, 1, 'quartIn')
 	end
 end

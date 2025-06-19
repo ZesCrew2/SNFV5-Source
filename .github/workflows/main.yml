@@ -50,6 +50,45 @@ jobs:
         with:
           name: linuxBuild
           path: 'export/release/linux/bin'
+  buildHtml:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4.1.7
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.7
+      # Runs a set of commands using the runners shell
+      - name: Install Lib
+        run: |
+          sudo add-apt-repository ppa:haxe/releases -y
+          sudo apt-get update
+          sudo apt-get install gcc-multilib g++-multilib haxe -y
+          mkdir "%HAXELIB_ROOT%"
+          haxelib setup "%HAXELIB_ROOT%"
+          haxelib install lime 8.1.2
+          haxelib install openfl 9.3.3
+          haxelib install flixel 5.6.1
+          haxelib install flixel-addons 3.2.2
+          haxelib install flixel-tools 1.5.1
+          haxelib install tjson 1.4.0
+          haxelib git SScript https://github.com/Jake-Official/SScript.git
+          haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e
+          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit 633fcc051399afed6781dd60cbf30ed8c3fe2c5a
+          haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21
+          haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc 70e7f5f3e76d526ac6fb8f0e6665efe7dfda589d
+          haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519
+          haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666
+          haxelib list
+      - name: Compile
+        run: haxelib run lime build html5 --app-version="4.0.0-${{ github.run_id}}"  -D 
+      - uses: actions/upload-artifact@v4.3.4
+        with:
+          name: HTML5 Build
+          path: export/release/html5/bin
   buildWindows:
     runs-on: windows-latest
 

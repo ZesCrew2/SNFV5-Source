@@ -27,7 +27,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'download', #end
+		#if MODS_ALLOWED 'mods', #end
+		#if DOWNLOAD_ALLOWED 'download', #end
 		'credits'
 	];
 
@@ -291,9 +292,13 @@ class MainMenuState extends MusicBeatState
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
 
-							#if MODS_ALLOWED
+							#if DOWNLOAD_ALLOWED
 							case 'download':
-								MusicBeatState.switchState(new ModsMenuState());
+							    MusicBeatState.resetState();
+							    FlxG.openURL('https://gamebanana.com/mods/44194');
+							#elseif desktop
+							    MusicBeatState.resetState();
+							    FlxG.openURL('https://gamebanana.com/mods/44194');
 							#end
 
 							#if ACHIEVEMENTS_ALLOWED
