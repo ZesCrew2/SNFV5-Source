@@ -1,6 +1,6 @@
 composer = "not a real penguin" -- This goes for each song, you have to adjust the names.
 charter = "Syn" -- This goes for each song, you have to adjust the names.
-artist = "clefanight, ZesCrew2" -- This goes for each song, you have to adjust the names.
+artist = "clefanight, leanster, ZesCrew2" -- This goes for each song, you have to adjust the names.
 animator = "SillyPebblez" -- This goes for each song, you have to adjust the names.
 va = "Dan Green, yungtron" -- This goes for each song, you have to adjust the names.
 -- bpm = "127" -- Please make sure to change the bpms for each song, because I don't know how to get the chart bpms correctly. (way before Herox figured it out as I don't need that one)

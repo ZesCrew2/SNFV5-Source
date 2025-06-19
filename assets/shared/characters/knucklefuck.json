@@ -2,54 +2,94 @@
 	"animations": [
 		{
 			"loop": false,
-			"offsets": [-5, -246],
-			"anim": "singLEFT",
+			"offsets": [100, 224],
+			"anim": "idle",
 			"fps": 24,
-			"name": "Left",
+			"name": "KNUCKLEFUCK_Idle",
 			"indices": []
 		},
 		{
 			"loop": false,
-			"offsets": [42, -286],
+			"offsets": [107, 119],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "Down",
-			"indices": []
+			"name": "KNUCKLEFUCK_Down",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 		},
 		{
 			"loop": false,
-			"offsets": [-27, -222],
+			"offsets": [97, 279],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "Up",
+			"name": "KNUCKLEFUCK_Up",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		},
+		{
+			"loop": false,
+			"offsets": [102, 195],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
 			"indices": []
 		},
 		{
 			"loop": false,
-			"offsets": [43, -247],
+			"offsets": [102, 195],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [102, 195],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [102, 195],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [102, 195],
+			"anim": "hey",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [92, 199],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "Right",
-			"indices": []
+			"name": "KNUCKLEFUCK_Left",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 		},
 		{
-			"offsets": [22, -246],
-			"loop": false,
+			"offsets": [207, 303],
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
 			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "Idle"
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "KNUCKLEFUCK_Right"
 		}
 	],
 	"vocals_file": "knux",
 	"no_antialiasing": false,
-	"image": "characters/knux",
-	"position": [-40, 60],
-	"healthicon": "knux",
-	"flip_x": false,
-	"healthbar_colors": [212, 46, 65],
-	"camera_position": [100, 130],
-	"sing_duration": 6.1,
-	"scale": 1.5,
+	"image": "characters/Knucklefuck",
+	"position": [-50, 420],
+	"healthicon": "knuxlefuck",
+	"flip_x": true,
+	"healthbar_colors": [146, 1, 0],
+	"camera_position": [160, -190],
+	"sing_duration": 4,
+	"scale": 0.9,
 	"_editor_isPlayer": false
 }
