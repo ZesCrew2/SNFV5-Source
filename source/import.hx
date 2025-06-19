@@ -5,10 +5,15 @@ import backend.Discord;
 #end
 
 //Psych
+#if web
+//idk said for only desktop
+#elseif desktop
 #if LUA_ALLOWED
 import llua.*;
 import llua.Lua;
 #end
+#end
+
 
 #if ACHIEVEMENTS_ALLOWED
 import backend.Achievements;
