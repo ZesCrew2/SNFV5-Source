@@ -46,7 +46,7 @@ class Achievements {
 		createAchievement('hype',				{name: "Austism Spectrum", description: "Finish a Song without going back to Idle."});
 		createAchievement('two_keys',				{name: "Double Trouble", description: "Finish a Song pressing only two keys."});
 		createAchievement('toastie',				{name: "PotatOS", description: "Do you ever wonder why Potatos conduct electricity?"});
-		createAchievement('kris',				{name: "Kris's Secret", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
+		createAchievement('debugger',				{name: "Boyfriend Who??", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
 		
 		//dont delete this thing below
 		_originalLength = _sortID + 1;
