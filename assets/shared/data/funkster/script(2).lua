@@ -1,11 +1,13 @@
 --events coded by @monoaether
 
+--[[
 function opponentNoteHit()
        health = getProperty('health')
     if getProperty('health') > 0.1 then
        setProperty('health', health- 0.015);
 	end
 end
+]] -- it has no use on this anymore, sorry monoaether (- Herox/Arie Temps)
 
 function goodNoteHit()
    health = getProperty('health')
