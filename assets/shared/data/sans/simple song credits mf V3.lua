@@ -1,7 +1,7 @@
 composer = "Kawaii Sprite" -- This goes for each song, you have to adjust the names.
 charter = "ninjamuffin99" -- This goes for each song, you have to adjust the names.
-artist = "PhantomArcade, Maticss, Tom Shades, ZesCrew2, JAPPA" -- This goes for each song, you have to adjust the names.
-animator = "PhantomArcade, Tom Shades" -- This goes for each song, you have to adjust the names.
+artist = "Chocomint, ZesCrew2, Lilac" -- This goes for each song, you have to adjust the names.
+animator = "ZesCrew2" -- This goes for each song, you have to adjust the names.
 va = "N/A" -- This goes for each song, you have to adjust the names.
 -- bpm = "127" -- Please make sure to change the bpms for each song, because I don't know how to get the chart bpms correctly. (way before Herox figured it out as I don't need that one)
 ---------------------------------------------------------------------------------------------

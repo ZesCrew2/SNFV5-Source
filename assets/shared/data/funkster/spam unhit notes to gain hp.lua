@@ -1,6 +1,4 @@
 ghostTappingEnabled = true
-drainHP = false
-songStartedToDrain = false
 
 function onCreate()
     for i = 0, (getProperty("unspawnNotes.length")-1) do
@@ -33,24 +31,6 @@ function onGhostTap() -- I could've sworn I saw this exact function before. But 
 	if ghostTappingEnabled == true then
 	setProperty('health', getProperty('health')+0.03)
 	end
-end
-
-function onUpdate()
-if songStartedToDrain == true then
-	if getProperty('dad.animation.curAnim.name') == 'idle' then
-    drainHP = true
-	else
-	drainHP = false
-    end
-end
-	
-	if drainHP == true then
-	setProperty('health', getProperty('health')-0.006)
-	end
-end
-
-function onSongStart()
-songStartedToDrain = true
 end
 
 function onEvent(name, v1, v2)

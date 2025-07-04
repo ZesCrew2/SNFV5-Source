@@ -1,4 +1,4 @@
-composer = "colinator27, Devilredd, Ethosein" -- This goes for each song, you have to adjust the names.
+composer = "Aniball, Woopdoo" -- This goes for each song, you have to adjust the names.
 charter = "Syn" -- This goes for each song, you have to adjust the names.
 artist = "Chocomint, ZesCrew2, Lilac" -- This goes for each song, you have to adjust the names.
 animator = "ZesCrew2" -- This goes for each song, you have to adjust the names.
