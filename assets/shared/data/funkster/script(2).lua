@@ -14,6 +14,7 @@ function goodNoteHit()
    setProperty('health', health + 0.01);
 end
 
+function onCreate()
    setProperty('defaultCamZoom', 2.0)
 
    makeLuaSprite('black', '', 0, 0)
