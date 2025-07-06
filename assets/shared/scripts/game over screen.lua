@@ -107,13 +107,7 @@ end
 			setProperty("inCutscene", true)
 			
 			setPropertyFromClass('flixel.FlxG', 'mouse.visible', false);
-			if songName == 'Knights Trouble Afoot!' then
-			triggerEvent('Change Character', 'bf', 'oldrestartmonitor')
-			screenCenter('boyfriend')
-			elseif songName == 'Sans' then
-			triggerEvent('Change Character', 'bf', 'oldrestartmonitor')
-			screenCenter('boyfriend')
-			elseif songName == 'RevengeSpook' then
+			if songName == 'Gamla' then
 			triggerEvent('Change Character', 'bf', 'oldrestartmonitor')
 			screenCenter('boyfriend')
 			else
@@ -198,11 +192,7 @@ end
 			cancelTimer('the beat hits like hellStart')
 			cancelTimer('the beat hits like hellLoop')
 			cancelTimer('deathGeneral')
-				if songName == 'Knights Trouble Afoot!' then
-				
-				elseif songName == 'Sans' then
-				
-				elseif songName == 'RevengeSpook' then
+				if songName == 'Gamla' then
 				
 				else
 				setProperty('boyfriend.scale.x', 1.4)
@@ -245,11 +235,7 @@ function onTimerCompleted(tag)
 	--playMusic('gameOver', 1, true) -- as it turns out, you can't mute this as a music so this sucks. Had to switch to sound.
 	playSound('gameOver', 1, 'gameOverLoop Tag')
 	triggerEvent('Play Animation', 'deathLoop', 'bf')
-		if songName == 'Knights Trouble Afoot!' then
-	
-		elseif songName == 'Sans' then
-			
-		elseif songName == 'RevengeSpook' then
+		if songName == 'Gamla' then
 			
 		else
 		setProperty('boyfriend.scale.x', 1.5)
@@ -262,11 +248,7 @@ function onTimerCompleted(tag)
 	
 	if tag == 'the beat hits like hellStart' then
 	runTimer('the beat hits like hellLoop', 0.6)
-		if songName == 'Knights Trouble Afoot!' then
-	
-		elseif songName == 'Sans' then
-			
-		elseif songName == 'RevengeSpook' then
+		if songName == 'Gamla' then
 			
 		else
 		setProperty('boyfriend.scale.x', 1.5)
@@ -277,11 +259,7 @@ function onTimerCompleted(tag)
 	
 	elseif tag == 'the beat hits like hellLoop' then
 	runTimer('the beat hits like hellStart', 0.6)
-		if songName == 'Knights Trouble Afoot!' then
-		
-		elseif songName == 'Sans' then
-		
-		elseif songName == 'RevengeSpook' then
+		if songName == 'Gamla' then
 		
 		else
 		setProperty('boyfriend.scale.x', 1.5)
