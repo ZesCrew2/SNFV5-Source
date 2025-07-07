@@ -4,16 +4,14 @@ import flixel.system.FlxAssets.FlxShader;
 
 class MovingCharShader {
   public var shader(default, null):MovingChar = new MovingChar();
-  public var iTime(default, null):Float = 0;
 
-  public function new(){
+  public function new():Void{
     //what the sigma
-    shader.iTime.value = [iTime];
+    shader.iTime.value = [0];
   }
-  public function update(value:Float):Float {
-    iTime = value;
-    shader.iTime.value[] += value;
-    return value;
+
+  public function update(value:Float):Void {
+    shader.iTime.value[0] += value;
   }
 }
 class MovingChar extends FlxShader {

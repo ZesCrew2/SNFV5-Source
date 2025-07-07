@@ -2,20 +2,18 @@ package shaders;
 
 import haxe.xml.Access;
 import flixel.system.FlxAssets.FlxShader;
+import flixel.FlxG;
 
 class VhsShader {
-  public var shader(default, null):VhsS = new VhsS();
-  public var iTime(default, null):Float = 0;
+    public var shader(default, null):VhsS = new VhsS();
 
-  public function new(){
-    shader.iTime.value = [0];
-  }
-
-  public function update(value:Float):Float{
-    iTime = value;
-    shader.iTime.value[] += value;
-    return value;
-  }
+    public function new():Void{
+        shader.iTime.value = [0];
+    }
+    public function update(elapsed:Float):Void
+    {
+        shader.iTime.value[0] += elapsed;
+    }
 }
 class VhsS extends FlxShader {
     @:glFragmentSource('#pragma header
