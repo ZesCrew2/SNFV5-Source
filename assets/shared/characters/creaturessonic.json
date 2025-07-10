@@ -1,95 +1,95 @@
 {
 	"animations": [
 		{
-			"offsets": [230, 304],
 			"loop": false,
-			"fps": 24,
+			"offsets": [188, 304],
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
-			"offsets": [207, 299],
 			"loop": false,
-			"fps": 24,
+			"offsets": [187, 299],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right"
+			"fps": 24,
+			"name": "right",
+			"indices": []
 		},
 		{
-			"offsets": [222, 315],
 			"loop": false,
-			"fps": 24,
+			"offsets": [222, 315],
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "miss"
+			"fps": 24,
+			"name": "miss",
+			"indices": []
 		},
 		{
-			"offsets": [222, 315],
 			"loop": false,
-			"fps": 24,
+			"offsets": [222, 315],
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "miss"
+			"fps": 24,
+			"name": "miss",
+			"indices": []
 		},
 		{
-			"offsets": [222, 315],
 			"loop": false,
-			"fps": 24,
+			"offsets": [222, 315],
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "miss"
+			"fps": 24,
+			"name": "miss",
+			"indices": []
 		},
 		{
-			"offsets": [222, 315],
 			"loop": false,
-			"fps": 24,
+			"offsets": [222, 315],
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "miss"
+			"fps": 24,
+			"name": "miss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [222, 315],
-			"loop": false,
-			"fps": 24,
 			"anim": "hey",
-			"indices": [],
-			"name": "miss"
+			"fps": 24,
+			"name": "miss",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [227, 299],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+			"name": "down"
 		},
 		{
-			"loop": false,
 			"offsets": [207, 299],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "up",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+			"anim": "singUP",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+			"name": "up"
 		},
 		{
+			"offsets": [210, 294],
 			"loop": false,
-			"offsets": [270, 294],
-			"anim": "singLEFT",
 			"fps": 24,
-			"name": "left",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+			"anim": "singLEFT",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+			"name": "left"
 		}
 	],
 	"vocals_file": "sonic",
 	"no_antialiasing": false,
 	"image": "characters/CreaturesSonic",
-	"position": [-40, 410],
+	"position": [-810, 410],
 	"healthicon": "creaturessonic",
-	"flip_x": false,
+	"flip_x": true,
 	"healthbar_colors": [0, 150, 253],
-	"camera_position": [-20, -240],
+	"camera_position": [-70, -240],
 	"sing_duration": 4,
 	"scale": 0.9,
-	"_editor_isPlayer": false
+	"_editor_isPlayer": true
 }

@@ -1,82 +1,82 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [112, -230],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Left",
-			"indices": []
+			"indices": [],
+			"name": "Left"
 		},
 		{
-			"loop": false,
 			"offsets": [90, -233],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Down",
-			"indices": []
+			"indices": [],
+			"name": "Down"
 		},
 		{
-			"loop": false,
 			"offsets": [91, -152],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "Up",
-			"indices": []
+			"indices": [],
+			"name": "Up"
 		},
 		{
-			"loop": false,
 			"offsets": [90, -230],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Right",
-			"indices": []
+			"indices": [],
+			"name": "Right"
 		},
 		{
-			"loop": false,
 			"offsets": [96, -230],
+			"loop": false,
+			"fps": 24,
 			"anim": "hurt",
-			"fps": 24,
-			"name": "Oops",
-			"indices": []
+			"indices": [],
+			"name": "Oops"
 		},
 		{
-			"loop": false,
 			"offsets": [457, -227],
+			"loop": false,
+			"fps": 24,
 			"anim": "hey",
-			"fps": 24,
-			"name": "i am confusion",
-			"indices": []
+			"indices": [],
+			"name": "i am confusion"
 		},
 		{
-			"loop": false,
 			"offsets": [83, -402],
+			"loop": false,
+			"fps": 24,
 			"anim": "danceLeft",
-			"fps": 24,
-			"name": "BREEZIE_D1",
-			"indices": []
+			"indices": [],
+			"name": "BREEZIE_D1"
 		},
 		{
-			"loop": false,
 			"offsets": [84, -400],
-			"anim": "danceRight",
+			"loop": false,
 			"fps": 24,
-			"name": "BREEZIE_D2",
-			"indices": []
+			"anim": "danceRight",
+			"indices": [],
+			"name": "BREEZIE_D2"
 		},
 		{
-			"loop": false,
 			"offsets": [75, -408],
-			"anim": "sad",
+			"loop": false,
 			"fps": 24,
-			"name": "BREEZIE_Oops",
-			"indices": []
+			"anim": "sad",
+			"indices": [],
+			"name": "BREEZIE_Oops"
 		}
 	],
 	"vocals_file": "breezie",
 	"no_antialiasing": false,
 	"image": "characters/BreezieFuckle",
-	"position": [160, -295],
+	"position": [170, -295],
 	"healthicon": "breeziegf",
 	"flip_x": false,
 	"healthbar_colors": [128, 201, 158],
