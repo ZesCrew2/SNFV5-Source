@@ -1,95 +1,95 @@
 {
 	"animations": [
 		{
-			"offsets": [100, 224],
 			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Idle"
-		},
-		{
-			"offsets": [107, 109],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-			"name": "KNUCKLEFUCK_Down"
-		},
-		{
-			"offsets": [68, 283],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-			"name": "KNUCKLEFUCK_Up"
-		},
-		{
 			"offsets": [102, 195],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Miss"
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
 		},
 		{
-			"offsets": [102, 195],
 			"loop": false,
-			"fps": 24,
+			"offsets": [102, 195],
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Miss"
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
 		},
 		{
-			"offsets": [102, 195],
 			"loop": false,
-			"fps": 24,
+			"offsets": [102, 195],
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Miss"
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
 		},
 		{
-			"offsets": [102, 195],
 			"loop": false,
-			"fps": 24,
+			"offsets": [102, 195],
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Miss"
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [102, 195],
-			"loop": false,
-			"fps": 24,
 			"anim": "hey",
-			"indices": [],
-			"name": "KNUCKLEFUCK_Miss"
-		},
-		{
-			"offsets": [392, 199],
-			"loop": false,
 			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-			"name": "KNUCKLEFUCK_Left"
+			"name": "KNUCKLEFUCK_Miss",
+			"indices": []
 		},
 		{
 			"loop": false,
-			"offsets": [95, 304],
+			"offsets": [95, 222],
 			"anim": "singRIGHT",
 			"fps": 24,
 			"name": "KNUCKLEFUCK_Right",
 			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		},
+		{
+			"loop": false,
+			"offsets": [94, 224],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Up",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		},
+		{
+			"loop": false,
+			"offsets": [93, 228],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Down",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		},
+		{
+			"loop": false,
+			"offsets": [110, 227],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "KNUCKLEFUCK_Left",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 29, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+		},
+		{
+			"offsets": [100, 224],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "KNUCKLEFUCK_Idle"
 		}
 	],
 	"vocals_file": "knux",
 	"no_antialiasing": false,
 	"image": "characters/Knucklefuck",
-	"position": [20, 420],
-	"healthicon": "knuxlefuck",
-	"flip_x": true,
+	"position": [480, 330],
+	"healthicon": "knucklefuck",
+	"flip_x": false,
 	"healthbar_colors": [146, 1, 0],
-	"camera_position": [350, -190],
-	"sing_duration": 4,
+	"camera_position": [-290, -190],
+	"sing_duration": 5.5,
 	"scale": 0.9,
-	"_editor_isPlayer": true
+	"_editor_isPlayer": false
 }

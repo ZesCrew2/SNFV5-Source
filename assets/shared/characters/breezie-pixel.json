@@ -1,27 +1,27 @@
 {
 	"animations": [
 		{
-			"offsets": [0, 30],
 			"loop": false,
-			"fps": 12,
-			"anim": "danceLeft",
-			"indices": [],
-			"name": "DanceLeft"
-		},
-		{
 			"offsets": [0, 30],
-			"loop": false,
-			"fps": 12,
 			"anim": "danceRight",
-			"indices": [],
-			"name": "DanceRight"
+			"fps": 24,
+			"name": "DanceRight",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6]
+		},
+		{
+			"loop": false,
+			"offsets": [0, 30],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "DanceLeft",
+			"indices": [0, 0, 1, 2, 3, 4, 5, 6]
 		},
 		{
 			"offsets": [0, 30],
-			"loop": false,
-			"fps": 12,
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+			"fps": 24,
 			"anim": "sad",
-			"indices": [],
+			"loop": false,
 			"name": "Oops"
 		}
 	],
@@ -29,7 +29,7 @@
 	"no_antialiasing": true,
 	"image": "characters/breezie-pixel",
 	"position": [150, 550],
-	"healthicon": "breezie",
+	"healthicon": "breeziegf",
 	"flip_x": false,
 	"healthbar_colors": [128, 201, 158],
 	"camera_position": [-250, -130],
