@@ -3,30 +3,30 @@
 	"difficulties": "Added in SNF V5",
 	"hideFreeplay": false,
 	"weekBackground": "discord",
+	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"weekBefore": "tutorial",
 	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Fuckleknuckle",
+			"knucklefuck",
+			[
+				206,
+				0,
+				0
+			]
+		]
+	],
 	"weekCharacters": [
 		"knux",
 		"",
 		"sonic2022"
 	],
-	"songs": [
-		[
-			"Fuckleknuckle",
-			"knux",
-			[
-				212,
-				46,
-				65
-			]
-		]
-	],
-	"hideStoryMode": true,
-	"weekName": "Fuckleknuckle",
-	"hiddenUntilUnlocked": false
+	"hiddenUntilUnlocked": false,
+	"weekName": "Fuckleknuckle"
 }
