@@ -240,6 +240,9 @@ class PlayState extends MusicBeatState
 	#end
 	public var introSoundsSuffix:String = '';
 
+	var shaderShit = new shaders.VhsShader();
+	var shaderHud = new shaders.MovingCharShader();
+
 	// Less laggy controls
 	private var keysArray:Array<String>;
 	public var songName:String;
@@ -543,6 +546,15 @@ class PlayState extends MusicBeatState
 		comboGroup.cameras = [camHUD];
 
 		startingSong = true;
+
+		switch(songName){
+			case 're-rocked' | 'robotnik-ii':
+				camGame.setFilters([new ShaderFilter(shaderShit.shader)]);
+				camHUD.setFilters([new ShaderFilter(shaderHud.shader)]);
+			case 'blasted-hedgehog' | 'dithering-dingbots':
+				camGame.setFilters([new ShaderFilter(shaderShit.shader)]);
+				camHUD.setFilters([new ShaderFilter(shaderHud.shader)]);
+		}
 
 		#if LUA_ALLOWED
 		for (notetype in noteTypes)
@@ -1635,6 +1647,9 @@ class PlayState extends MusicBeatState
 		else FlxG.camera.followLerp = 0;
 		callOnScripts('onUpdate', [elapsed]);
 
+		shaderShit.update(elapsed);
+		shaderHud.update(elapsed);
+		
 		super.update(elapsed);
 
 		setOnScripts('curDecStep', curDecStep);
