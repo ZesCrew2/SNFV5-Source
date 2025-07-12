@@ -1,8 +1,8 @@
-composer = "ZesCrew2" -- This goes for each song, you have to adjust the names.
+composer = "The Crystal Method, Matisyahu" -- This goes for each song, you have to adjust the names.
 charter = "Syn" -- This goes for each song, you have to adjust the names.
-artist = "SillyPebblez, ZesCrew2, Lilac" -- This goes for each song, you have to adjust the names.
-animator = "SillyPebblez, ZesCrew2" -- This goes for each song, you have to adjust the names.
-va = "ZesCrew2, yungtron" -- This goes for each song, you have to adjust the names.
+artist = "SillyPebblez, ZesCrew2, The Crystal Method" -- This goes for each song, you have to adjust the names.
+animator = "ZesCrew2" -- This goes for each song, you have to adjust the names.
+va = "Matisyahu" -- This goes for each song, you have to adjust the names.
 -- bpm = "127" -- Please make sure to change the bpms for each song, because I don't know how to get the chart bpms correctly. (way before Herox figured it out as I don't need that one)
 ---------------------------------------------------------------------------------------------
 -- Okay so, I figured it out that in the source code about FunkinLua.hx, there IS a bpm selection automatically. So might as well make a custom one for SNF devs who want to do that instead!! :3 (- Herox, as of May 2nd, 2025)
