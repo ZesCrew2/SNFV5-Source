@@ -33,6 +33,7 @@ class RareVideoState extends MusicBeatState
 		videoCutscene.play();
 		videoCutscene.alpha = 1;
 		videoCutscene.visible = true;
+		FlxG.sound.music.stop();
 		videoCutscene.bitmap.onEndReached.add(function()
 		{
 				trace("Start Going 'CreditsState'");
