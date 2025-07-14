@@ -40,18 +40,6 @@ class RareVideoState extends MusicBeatState
 				MusicBeatState.switchState(new states.CreditsState());
 		});
 	}
-		textShit = new FlxText(12, FlxG.height - 24, 0, "", 32);
-		textShit.text = "Click [Enter] To Skip Video";
-		textShit.setFormat("Eras Bold ITC", 32);
-		textShit.alpha = 0;
-		textShit.updateHitbox();
-		add(textShit);
-		FlxTween.tween(textShit, {'alpha': 1}, 1, {onComplete:function(twnShit:FlxTween){
-			canSkip = true;
-			textShit.alpha = 1;
-			twnShit.destroy();
-		}});
-	}
 	
 	override function update(elapsed:Float):Void
 	{
