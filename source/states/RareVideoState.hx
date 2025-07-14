@@ -16,7 +16,7 @@ class RareVideoState extends MusicBeatState
 	public var videoCutscene:FlxVideoSprite;
 	var canSkip:Bool = false;
 	var textShit:FlxText;
-    var loadShit:String = "creds" + FlxG.random.int(1, 2);
+    var loadShit:String = "creds" + FlxG.random.int(1, 2, 3);
 	override function create():Void
 	{
 		FlxG.mouse.visible = true;
