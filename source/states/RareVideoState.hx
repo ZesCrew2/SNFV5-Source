@@ -13,45 +13,49 @@ import hxvlc.flixel.FlxVideoSprite;
 
 class RareVideoState extends MusicBeatState
 {
-	public var videoCutscene:FlxVideoSprite;
-	var canSkip:Bool = false;
-	var textShit:FlxText;
+    public var videoCutscene:FlxVideoSprite;
+    var canSkip:Bool = false;
+    var textShit:FlxText;
     var loadShit:String = "creds" + FlxG.random.int(1, 2);
-	override function create():Void
-	{
-		FlxG.mouse.visible = true;
-		// fuck that mouse just move on load shit graphic :sob:
+    override function create():Void
+    {
+        FlxG.mouse.visible = true;
+        // fuck that mouse just move on load shit graphic 😭
         startVideo(loadShit); // hai
-		super.create();
-	}
+        super.create();
+    }
 
-   	public function startVideo(name:String)
-	{
-		videoCutscene = new FlxVideoSprite(0, 0);
-		add(videoCutscene);
-		videoCutscene.load(Paths.video(name));
-		videoCutscene.play();
-		videoCutscene.alpha = 1;
-		videoCutscene.visible = true;
-		FlxG.sound.music.stop();
-		videoCutscene.bitmap.onEndReached.add(function()
-		{
-				trace("Start Going 'CreditsState'");
-				MusicBeatState.switchState(new states.CreditsState());
-		});
-	}
-	
-	override function update(elapsed:Float):Void
-	{
-		if(!canSkip){
-			//nothing else
-		}else{
-			if(FlxG.keys.justPressed.ENTER){
-				videoCutscene.pause();
-				trace(":3");
-				MusicBeatState.switchState(new states.CreditsState());
-				}
-				}
-		super.update(elapsed);
-	}
+       public function startVideo(name:String)
+    {
+        videoCutscene = new FlxVideoSprite(0, 0);
+        add(videoCutscene);
+        videoCutscene.load(Paths.video(name));
+        videoCutscene.play();
+        videoCutscene.alpha = 1;
+        videoCutscene.visible = true;
+        FlxG.sound.music.stop();
+        // Allow skipping after 0.5 seconds
+        FlxTimer.schedule(0.5, function() {
+            canSkip = true;
+        });
+        videoCutscene.bitmap.onEndReached.add(function()
+        {
+                trace("Start Going 'CreditsState'");
+                MusicBeatState.switchState(new states.CreditsState());
+        });
+    }
+    
+    override function update(elapsed:Float):Void
+    {
+        if(!canSkip){
+            //nothing else
+        }else{
+            if(FlxG.keys.justPressed.ENTER){
+                videoCutscene.pause();
+                trace(":3");
+                MusicBeatState.switchState(new states.CreditsState());
+                }
+                }
+        super.update(elapsed);
+    }
 }
