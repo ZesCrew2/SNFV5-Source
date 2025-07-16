@@ -556,6 +556,15 @@ class PlayState extends MusicBeatState
 				camHUD.setFilters([new ShaderFilter(shaderHud.shader)]);
 		}
 
+		#if ACHIEVEMENTS_ALLOWED
+		checkForAchievement(['roadkill_enthusiast']);
+		if(songName == 'stained-mask' && deathCounter == 5)
+			Achievements.unlock('roadkill_enthusiast');
+		#end
+
+		trace(songName);
+		trace(deathCounter);
+
 		#if LUA_ALLOWED
 		for (notetype in noteTypes)
 			startLuasNamed('custom_notetypes/' + notetype + '.lua');
@@ -3546,7 +3555,7 @@ class PlayState extends MusicBeatState
 			}
 			else // any FC achievements, name should be "weekFileName_nomiss", e.g: "week3_nomiss";
 			{
-				if(isStoryMode && campaignMisses + songMisses < 1 && Difficulty.getString().toUpperCase() == 'HARD'
+				if(isStoryMode && campaignMisses + songMisses < 1
 					&& storyPlaylist.length <= 1 && !changedDifficulty && !usedPractice)
 					unlock = true;
 			}
