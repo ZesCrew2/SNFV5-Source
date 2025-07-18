@@ -2,7 +2,7 @@ function onCountdownTick(swagCounter)
 
 if swagCounter == 0 then  -- 3
 
-playSound('Intro3', 2)
+--playSound('Intro3', 2)
 
 makeLuaSprite('3', 'ha1', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
 
@@ -20,7 +20,7 @@ end
 
 if swagCounter == 1 then  -- Ready
 
-playSound('Intro2', 2)
+--playSound('Intro2', 2)
 
 makeLuaSprite('ready', 'ha2', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
 
@@ -38,7 +38,7 @@ end
 
 if swagCounter == 2 then -- Set
 
-playSound('Intro1', 2)
+--playSound('Intro1', 2)
 
 makeLuaSprite('set', 'ha3', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
 
@@ -56,7 +56,7 @@ end
 
 if swagCounter == 3 then -- GO
 
-playSound('IntroGo', 2)
+--playSound('IntroGo', 2)
 
 makeLuaSprite('GO', 'one', screenWidth / 1.5 - 569, screenHeight / 1.8 - 185);
 
