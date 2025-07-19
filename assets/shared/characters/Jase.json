@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				108,
+				-236
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "BF idle dance"
+		},
+		{
+			"offsets": [
+				95,
+				-225
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "BF NOTE LEFT0"
+		},
+		{
+			"offsets": [
+				101,
+				-222
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "BF NOTE DOWN0"
+		},
+		{
+			"offsets": [
+				91,
+				-206
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "BF NOTE UP0"
+		},
+		{
+			"offsets": [
+				66,
+				-224
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "BF NOTE RIGHT0"
+		},
+		{
+			"offsets": [
+				104,
+				-241
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "BF HEY!!!"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Jase",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "Jase",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		255,
+		0
+	],
+	"camera_position": [
+		60,
+		260
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
