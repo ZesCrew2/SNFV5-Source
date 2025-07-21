@@ -1,7 +1,7 @@
 composer = "The Crystal Method, Matisyahu" -- This goes for each song, you have to adjust the names.
 charter = "Syn" -- This goes for each song, you have to adjust the names.
 artist = "SillyPebblez, ZesCrew2, The Crystal Method" -- This goes for each song, you have to adjust the names.
-animator = "ZesCrew2" -- This goes for each song, you have to adjust the names.
+animator = "SillyPebblez, ZesCrew2" -- This goes for each song, you have to adjust the names.
 va = "Matisyahu" -- This goes for each song, you have to adjust the names.
 -- bpm = "127" -- Please make sure to change the bpms for each song, because I don't know how to get the chart bpms correctly. (way before Herox figured it out as I don't need that one)
 ---------------------------------------------------------------------------------------------
@@ -11,15 +11,15 @@ customBPMName = "yes, you can put the custom text here!"
 
 function onCreate()
 if songName == "Re-Rocked" then
-makeLuaSprite('blackBars', 'plate', -1000, -150);
+makeLuaSprite('blackBars', 'platedint', -1000, -150);
 elseif songName == "Blasted Hedgehog" then
-makeLuaSprite('blackBars', 'plate', -1000, -150);
+makeLuaSprite('blackBars', 'platedint', -1000, -150);
 elseif songName == "Dithering Dingbots" then
-makeLuaSprite('blackBars', 'plate', -1000, -150);
+makeLuaSprite('blackBars', 'platedint', -1000, -150);
 elseif songName == "robotnik-ii" then
-makeLuaSprite('blackBars', 'plate', -1000, -150);
+makeLuaSprite('blackBars', 'platedint', -1000, -150);
 else
-makeLuaSprite('blackBars', 'plate', -1000, -25);
+makeLuaSprite('blackBars', 'platedint', -1000, -25);
 end
 addLuaSprite('blackBars', false);
 setProperty('blackBars.alpha', 0.8)
