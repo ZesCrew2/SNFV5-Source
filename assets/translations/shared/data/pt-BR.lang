@@ -35,6 +35,14 @@ practice_mode: "Modo Prática"
 charting_mode: "Modo Charter"
 blueballed: "Broxadas: {1}"
 
+// Ratings
+images/sick: "images/pt-BR/sick"
+images/good: "images/pt-BR/good"
+images/bad: "images/pt-BR/bad"
+images/shit: "images/pt-BR/shit"
+images/miss: "images/pt-BR/miss"
+images/missdint: "images/pt-BR/missdint"
+
 // Main Menu
 images/mainmenu/menu_story_mode: "images/mainmenu/menu_story_mode"
 images/mainmenu/menu_freeplay: "images/mainmenu/menu_freeplay"
