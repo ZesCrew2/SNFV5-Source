@@ -9,11 +9,15 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import openfl.Assets;
 import haxe.xml.Access;
+#if VIDEOS_ALLOWED
 import hxvlc.flixel.FlxVideoSprite;
+#end
 
 class RareVideoState extends MusicBeatState
 {
+	#if VIDEOS_ALLOWED
 	public var videoCutscene:FlxVideoSprite;
+	#end
 	var canSkip:Bool = false;
 	var textShit:FlxText;
     var loadShit:String = "creds" + FlxG.random.int(1, 2);
