@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="3lamepausemenu.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="button_exit0000" x="5" y="5" width="154" height="156"/>
+	<SubTexture name="button_help0000" x="164" y="5" width="109" height="111"/>
+	<SubTexture name="button_mute0000" x="278" y="5" width="109" height="111"/>
+	<SubTexture name="button_muted0000" x="392" y="5" width="109" height="111"/>
+	<SubTexture name="button_resume0000" x="506" y="5" width="109" height="111"/>
+	<SubTexture name="button_retry0000" x="620" y="5" width="154" height="156"/>
+	<SubTexture name="button_yuh_huh0000" x="779" y="5" width="198" height="194"/>
+	<SubTexture name="level_number0000" x="982" y="5" width="149" height="72"/>
+	<SubTexture name="overlay_10000" x="1136" y="5" width="384" height="1080"/>
+	<SubTexture name="overlay_20000" x="1525" y="5" width="1920" height="1080"/>
+	<SubTexture name="prompt_help0000" x="5" y="1090" width="847" height="577"/>
+	<SubTexture name="restart_song0000" x="620" y="5" width="154" height="156"/>
+</TextureAtlas>
