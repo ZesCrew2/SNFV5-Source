@@ -60,7 +60,7 @@ jobs:
       - uses: actions/checkout@v4.1.7
       - uses: krdlab/setup-haxe@master
         with:
-          haxe-version: 4.3.0
+          haxe-version: 4.3.4
       # Runs a set of commands using the runners shell
       - name: Install Lib
         run: |
@@ -71,6 +71,8 @@ jobs:
           haxelib setup "%HAXELIB_ROOT%"
           haxelib install lime 8.1.2
           haxelib install openfl 9.3.3
+          haxelib run openfl -y
+          haxelib run openfl setup -always
           haxelib install flixel 5.6.1
           haxelib install flixel-addons 3.2.2
           haxelib install flixel-tools 1.5.1

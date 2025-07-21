@@ -9,11 +9,15 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import openfl.Assets;
 import haxe.xml.Access;
+#if VIDEOS_ALLOWED
 import hxvlc.flixel.FlxVideoSprite;
+#end
 
 class RareVideoState extends MusicBeatState
 {
+	#if VIDEOS_ALLOWED
 	public var videoCutscene:FlxVideoSprite;
+	#end
 	var canSkip:Bool = false;
 	var textShit:FlxText;
     var loadShit:String = "creds" + FlxG.random.int(1, 2);
@@ -27,6 +31,7 @@ class RareVideoState extends MusicBeatState
 
    	public function startVideo(name:String)
 	{
+		#if VIDEOS_ALLOWED
 		videoCutscene = new FlxVideoSprite(0, 0);
 		add(videoCutscene);
 		videoCutscene.load(Paths.video(name));
@@ -39,6 +44,7 @@ class RareVideoState extends MusicBeatState
 				trace("Start Going 'CreditsState'");
 				MusicBeatState.switchState(new states.CreditsState());
 		});
+		#end
 	}
 	
 	override function update(elapsed:Float):Void
@@ -47,7 +53,9 @@ class RareVideoState extends MusicBeatState
 			//nothing else
 		}else{
 			if(FlxG.keys.justPressed.ENTER){
+				#if VIDEOS_ALLOWED
 				videoCutscene.pause();
+				#end
 				trace(":3");
 				MusicBeatState.switchState(new states.CreditsState());
 				}
