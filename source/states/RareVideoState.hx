@@ -31,6 +31,7 @@ class RareVideoState extends MusicBeatState
 
    	public function startVideo(name:String)
 	{
+		#if VIDEOS_ALLOWED
 		videoCutscene = new FlxVideoSprite(0, 0);
 		add(videoCutscene);
 		videoCutscene.load(Paths.video(name));
@@ -43,6 +44,7 @@ class RareVideoState extends MusicBeatState
 				trace("Start Going 'CreditsState'");
 				MusicBeatState.switchState(new states.CreditsState());
 		});
+		#end
 	}
 	
 	override function update(elapsed:Float):Void
@@ -51,7 +53,9 @@ class RareVideoState extends MusicBeatState
 			//nothing else
 		}else{
 			if(FlxG.keys.justPressed.ENTER){
+				#if VIDEOS_ALLOWED
 				videoCutscene.pause();
+				#end
 				trace(":3");
 				MusicBeatState.switchState(new states.CreditsState());
 				}
