@@ -1,7 +1,7 @@
 composer = "Desk Lamp & ZesCrew2" -- This goes for each song, you have to adjust the names.
 charter = "Clefanight & Syn" -- This goes for each song, you have to adjust the names.
-artist = "Chocomint, clefaknight, ZesCrew2, RAPIDTANK2" -- This goes for each song, you have to adjust the names.
-animator = "ZesCrew2, clefaknight" -- This goes for each song, you have to adjust the names.
+artist = "Chocomint, ZesCrew2, RAPIDTANK2" -- This goes for each song, you have to adjust the names.
+animator = "Chocomint, ZesCrew2" -- This goes for each song, you have to adjust the names.
 va = "yungtron, ZesCrew2" -- This goes for each song, you have to adjust the names.
 -- bpm = "127" -- Please make sure to change the bpms for each song, because I don't know how to get the chart bpms correctly. (way before Herox figured it out as I don't need that one)
 ---------------------------------------------------------------------------------------------
