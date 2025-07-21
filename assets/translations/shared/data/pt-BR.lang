@@ -41,6 +41,10 @@ images/good: "images/pt-BR/good"
 images/bad: "images/pt-BR/bad"
 images/shit: "images/pt-BR/shit"
 images/miss: "images/pt-BR/miss"
+images/sickdint: "images/pt-BR/sickdint"
+images/gooddint: "images/pt-BR/gooddint"
+images/baddint: "images/pt-BR/baddint"
+images/shitdint: "images/pt-BR/shitdint"
 images/missdint: "images/pt-BR/missdint"
 
 // Main Menu
@@ -51,10 +55,6 @@ images/mainmenu/menu_credits: "images/mainmenu/menu_credits"
 // Story Mode
 images/Menu_Tracks: "images/pt-BR/Menu_Tracks"
 week_score: "PONTUAÇÃO: {1}"
-
-storyname_week5: "NEVASCA VERMELHA"
-storyname_week6: "simulador de confronto ft. moawling"
-storyname_weekend1: "Dívidas Fora do Prazo"
 
 // Freeplay
 personal_best: "MELHOR PONTUAÇÃO: {1} ({2}%)"
