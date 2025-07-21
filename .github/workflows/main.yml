@@ -86,7 +86,7 @@ jobs:
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666
           haxelib list
       - name: Compile
-        run: haxelib run lime build html5
+        run: haxelib run lime build html5 --app-version="4.0.0-${{ github.run_id}}" -D
       - uses: actions/upload-artifact@v4.3.4
         with:
           name: HTML5 Build
