@@ -12,8 +12,10 @@ import backend.Song;
 import backend.StageData;
 import objects.Character;
 
+#if (cpp || hl || neko)
 import sys.thread.Thread;
 import sys.thread.Mutex;
+#end
 
 import objects.Note;
 import objects.NoteSplash;
@@ -529,6 +531,7 @@ class LoadingState extends MusicBeatState
 
 		// for images, they get to have their own thread
 		for (image in imagesToPrepare)
+		{
 			#if (cpp || hl || neko)
 			Thread.create(() -> {
 				mutex.acquire();
@@ -562,6 +565,7 @@ class LoadingState extends MusicBeatState
 				loaded++;
 			});
 			#end
+		}
 	}
 
 	static function initThread(func:Void->Dynamic, traceData:String)
