@@ -12,7 +12,10 @@ import backend.Song;
 import backend.StageData;
 import objects.Character;
 
+// FOR LILY
+#if !js
 import sys.thread.Thread;
+#end
 import sys.thread.Mutex;
 
 import objects.Note;
