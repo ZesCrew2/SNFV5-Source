@@ -4,6 +4,8 @@
 import backend.Discord;
 #end
 
+import sys.thread.Thread;
+
 //Psych
 #if web
 //idk said for only desktop
