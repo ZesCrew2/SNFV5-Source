@@ -64,7 +64,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Lib
         run: |
-          haxelib setup C:/haxelib
+          haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib --never install flixel
           haxelib install lime 8.1.2
