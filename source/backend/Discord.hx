@@ -2,7 +2,10 @@ package backend;
 
 #if DISCORD_ALLOWED
 import Sys.sleep;
+//wow psych engine BAHAHAHH fuck me
+#if !js
 import sys.thread.Thread;
+#end
 import lime.app.Application;
 
 import hxdiscord_rpc.Discord;
