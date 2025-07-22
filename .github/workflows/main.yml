@@ -64,13 +64,13 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Lib
         run: |
-          sudo add-apt-repository ppa:haxe/releases -y
-          sudo apt-get update
-          sudo apt-get install gcc-multilib g++-multilib haxe -y
-          mkdir "%HAXELIB_ROOT%"
-          haxelib setup "%HAXELIB_ROOT%"
+          haxelib setup C:/haxelib
+          haxelib install hxcpp > /dev/null --quiet
+          haxelib --never install flixel
           haxelib install lime 8.1.2
           haxelib install openfl 9.3.3
+          haxelib run lime setup flixel
+          haxelib run lime setup
           haxelib run openfl -y
           haxelib run openfl setup -always
           haxelib install flixel 5.6.1
