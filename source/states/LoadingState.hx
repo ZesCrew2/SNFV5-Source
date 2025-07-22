@@ -15,8 +15,8 @@ import objects.Character;
 // FOR LILY
 #if !js
 import sys.thread.Thread;
-#end
 import sys.thread.Mutex;
+#end
 
 import objects.Note;
 import objects.NoteSplash;
