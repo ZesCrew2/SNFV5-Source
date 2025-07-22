@@ -635,7 +635,12 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 	var outputAlpha:Float = 0;
 	var songFinished:Bool = false;
 
-	var fileDialog:FileDialogHandler = new FileDialogHandler();
+	#if js
+	var fileDialog = new states.editors.content.FileDialogHandlerWeb();
+	#else
+	var fileDialog = new states.editors.content.FileDialogHandler();
+	#end
+
 	var lastFocus:PsychUIInputText;
 
 	var autoSaveTime:Float = 0;
