@@ -5,6 +5,7 @@ import openfl.events.Event;
 import openfl.events.IOErrorEvent;
 import flash.net.FileFilter;
 
+#if !js
 import haxe.Exception;
 import sys.io.File;
 import lime.ui.*;
@@ -240,3 +241,4 @@ class FileReferenceCustom extends FileReference
 		return false;
 	}
 }
+#end

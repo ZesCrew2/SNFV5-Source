@@ -12,8 +12,10 @@ import backend.Song;
 import backend.StageData;
 import objects.Character;
 
+#if (cpp || hl || neko)
 import sys.thread.Thread;
 import sys.thread.Mutex;
+#end
 
 import objects.Note;
 import objects.NoteSplash;
@@ -25,7 +27,9 @@ class LoadingState extends MusicBeatState
 
 	static var originalBitmapKeys:Map<String, String> = [];
 	static var requestedBitmaps:Map<String, BitmapData> = [];
+	#if (cpp || hl || neko)
 	static var mutex:Mutex = new Mutex();
+	#end
 
 	function new(target:FlxState, stopMusic:Bool)
 	{
@@ -321,6 +325,7 @@ class LoadingState extends MusicBeatState
 
 		var song:SwagSong = PlayState.SONG;
 		var folder:String = Paths.formatToSongPath(Song.loadedSongName);
+		#if (cpp || hl || neko)
 		Thread.create(() -> {
 			// LOAD NOTE IMAGE
 			var noteSkin:String = Note.defaultNoteSkin;
@@ -457,6 +462,7 @@ class LoadingState extends MusicBeatState
 			}
 			completedThread();
 		});
+		#end
 	}
 
 	public static function clearInvalids()
@@ -525,6 +531,8 @@ class LoadingState extends MusicBeatState
 
 		// for images, they get to have their own thread
 		for (image in imagesToPrepare)
+		{
+			#if (cpp || hl || neko)
 			Thread.create(() -> {
 				mutex.acquire();
 				try {
@@ -556,10 +564,13 @@ class LoadingState extends MusicBeatState
 				mutex.release();
 				loaded++;
 			});
+			#end
+		}
 	}
 
 	static function initThread(func:Void->Dynamic, traceData:String)
 	{
+		#if (cpp || hl || neko)
 		Thread.create(() -> {
 			mutex.acquire();
 			try {
@@ -572,6 +583,7 @@ class LoadingState extends MusicBeatState
 			mutex.release();
 			loaded++;
 		});
+		#end
 	}
 
 	inline private static function preloadCharacter(char:String, ?prefixVocals:String)

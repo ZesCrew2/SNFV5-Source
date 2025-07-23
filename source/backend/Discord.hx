@@ -2,7 +2,10 @@ package backend;
 
 #if DISCORD_ALLOWED
 import Sys.sleep;
+//wow psych engine BAHAHAHH fuck me
+#if (cpp || hl || neko)
 import sys.thread.Thread;
+#end
 import lime.app.Application;
 
 import hxdiscord_rpc.Discord;
@@ -17,7 +20,9 @@ class DiscordClient
 	public static var clientID(default, set):String = _defaultID;
 	private static var presence:DiscordPresence = new DiscordPresence();
 	// hides this field from scripts and reflection in general
+	#if (cpp || hl || neko)
 	@:unreflective private static var __thread:Thread;
+	#end
 
 	public static function check()
 	{
