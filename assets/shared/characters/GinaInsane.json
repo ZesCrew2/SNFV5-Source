@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [460, -71],
+			"indices": [],
+			"fps": 34,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left"
+		},
+		{
+			"offsets": [470, -72],
+			"indices": [],
+			"fps": 34,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [460, -70],
+			"indices": [],
+			"fps": 34,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
+		},
+		{
+			"offsets": [459, -72],
+			"indices": [],
+			"fps": 34,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [460, -70],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/ginainsane",
+	"position": [0, 0],
+	"healthicon": "gina",
+	"flip_x": false,
+	"healthbar_colors": [216, 85, 142],
+	"camera_position": [-550, 50],
+	"sing_duration": 6,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
