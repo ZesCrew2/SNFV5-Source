@@ -1,7 +1,7 @@
 local allowCountdown = false
 function onEndSong()
     if isStoryMode and not seenCutscene then
-        startVideo('creds1')
+        startVideo('credits')
         seenCutscene = true
         return Function_Stop
     end

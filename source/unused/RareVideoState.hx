@@ -20,7 +20,7 @@ class RareVideoState extends MusicBeatState
 	#end
 	var canSkip:Bool = false;
 	var textShit:FlxText;
-    var loadShit:String = "credits"; // no longer randomised (for some reason)
+    var loadShit:String = "creds" + FlxG.random.int(1, 2);
 	override function create():Void
 	{
 		FlxG.mouse.visible = true;
@@ -32,7 +32,6 @@ class RareVideoState extends MusicBeatState
    	public function startVideo(name:String)
 	{
 		#if VIDEOS_ALLOWED
-		trace("ugh");
 		videoCutscene = new FlxVideoSprite(0, 0);
 		add(videoCutscene);
 		videoCutscene.load(Paths.video(name));
@@ -50,12 +49,6 @@ class RareVideoState extends MusicBeatState
 	
 	override function update(elapsed:Float):Void
 	{
-		if(FlxG.keys.justPressed.SPACE){ // no fuckin idea why the other code needed to check "!canSkip" for some reason. 
-			MusicBeatState.switchState(new states.CreditsState());
-			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-		}
-		
-		/* 
 		if(!canSkip){
 			//nothing else
 		}else{
@@ -64,9 +57,9 @@ class RareVideoState extends MusicBeatState
 				videoCutscene.pause();
 				#end
 				trace(":3");
-				MusicBeatState.switchState(new states.MainMenuState());
+				MusicBeatState.switchState(new states.CreditsState());
 				}
 				}
-		super.update(elapsed); */
+		super.update(elapsed);
 	}
 }
