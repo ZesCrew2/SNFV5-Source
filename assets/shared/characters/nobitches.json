@@ -1,79 +1,79 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [3, 0],
-			"fps": 24,
+			"loop": false,
 			"anim": "cheer",
-			"indices": [],
-			"name": "GF Cheer"
+			"fps": 24,
+			"name": "GF Cheer",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [0, -19],
-			"fps": 24,
+			"loop": false,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "GF left note"
+			"fps": 24,
+			"name": "GF left note",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [0, -20],
-			"fps": 24,
+			"loop": false,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "GF Down Note"
+			"fps": 24,
+			"name": "GF Down Note",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [0, 4],
-			"fps": 24,
+			"loop": false,
 			"anim": "singUP",
-			"indices": [],
-			"name": "GF Up Note"
+			"fps": 24,
+			"name": "GF Up Note",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [0, -20],
-			"fps": 24,
+			"loop": false,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "GF Right Note"
+			"fps": 24,
+			"name": "GF Right Note",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [-2, -21],
-			"fps": 24,
+			"loop": false,
 			"anim": "sad",
-			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-			"name": "gf sad"
+			"fps": 24,
+			"name": "gf sad",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 		},
 		{
-			"loop": false,
 			"offsets": [0, -9],
-			"fps": 24,
+			"loop": false,
 			"anim": "danceLeft",
-			"indices": [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-			"name": "GF Dancing Beat"
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"indices": [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		},
 		{
-			"loop": false,
 			"offsets": [0, -9],
-			"fps": 24,
+			"loop": false,
 			"anim": "danceRight",
-			"indices": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
-			"name": "GF Dancing Beat"
+			"fps": 24,
+			"name": "GF Dancing Beat",
+			"indices": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/nogf",
-	"position": [666, 0],
+	"position": [236, 470],
 	"healthicon": "blank",
 	"flip_x": false,
 	"healthbar_colors": [0, 0, 0],
-	"camera_position": [-560, -40],
+	"camera_position": [0, -40],
 	"sing_duration": 4,
 	"scale": 0.2,
-	"_editor_isPlayer": false
+	"_editor_isPlayer": true
 }
