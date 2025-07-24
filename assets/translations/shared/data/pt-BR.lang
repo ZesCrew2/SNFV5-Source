@@ -60,6 +60,7 @@ images/missdint: "images/pt-BR/missdint"
 // Intro Shiz
 images/one: "images/pt-BR/one"
 images/onedint: "images/pt-BR/onedint"
+images/one-pixel: "images/pt-BR/one-pixel"
 data/introText: "data/pt-BR/introText"
 introText: "data/pt-BR/introText"
 
