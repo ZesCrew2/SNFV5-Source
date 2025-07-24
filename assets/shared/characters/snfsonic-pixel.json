@@ -2,7 +2,7 @@
 	"animations": [
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"anim": "singUP",
 			"fps": 24,
 			"name": "Up",
@@ -10,7 +10,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"anim": "singLEFT",
 			"fps": 24,
 			"name": "Left",
@@ -18,7 +18,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"anim": "singDOWN",
 			"fps": 24,
 			"name": "Down",
@@ -26,14 +26,14 @@
 		},
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"anim": "singRIGHT",
 			"fps": 24,
 			"name": "Right",
 			"indices": []
 		},
 		{
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFTmiss",
@@ -41,7 +41,7 @@
 			"name": "MissLeft"
 		},
 		{
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWNmiss",
@@ -49,7 +49,7 @@
 			"name": "MissDown"
 		},
 		{
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUPmiss",
@@ -57,7 +57,7 @@
 			"name": "MissUp"
 		},
 		{
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHTmiss",
@@ -65,7 +65,7 @@
 			"name": "MissRight"
 		},
 		{
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"loop": false,
 			"fps": 24,
 			"anim": "hey",
@@ -74,7 +74,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [-79, -22],
 			"anim": "idle",
 			"fps": 24,
 			"name": "Idle",
@@ -84,7 +84,7 @@
 	"vocals_file": "sonic",
 	"no_antialiasing": true,
 	"image": "characters/snfsonic-pixel",
-	"position": [120, 560],
+	"position": [40, 530],
 	"healthicon": "snfpixel",
 	"flip_x": true,
 	"healthbar_colors": [0, 107, 255],
