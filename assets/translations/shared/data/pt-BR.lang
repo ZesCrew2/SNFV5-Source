@@ -42,6 +42,11 @@ images/good: "images/pt-BR/good"
 images/bad: "images/pt-BR/bad"
 images/shit: "images/pt-BR/shit"
 images/miss: "images/pt-BR/miss"
+images/pixelUI/sick-pixel: "images/pt-BR/pixelUI/sick-pixel"
+images/pixelUI/good-pixel: "images/pt-BR/pixelUI/good-pixel"
+images/pixelUI/bad-pixel: "images/pt-BR/pixelUI/bad-pixel"
+images/pixelUI/shit-pixel: "images/pt-BR/pixelUI/shit-pixel"
+images/pixelUI/miss-pixel: "images/pt-BR/pixelUI/miss-pixel"
 images/sickdint: "images/pt-BR/sickdint"
 images/gooddint: "images/pt-BR/gooddint"
 images/baddint: "images/pt-BR/baddint"
@@ -55,11 +60,16 @@ images/missdint: "images/pt-BR/missdint"
 // Intro Shiz
 images/one: "images/pt-BR/one"
 images/onedint: "images/pt-BR/onedint"
+data/introText: "data/pt-BR/introText"
+introText: "data/pt-BR/introText"
 
 // Main Menu
 images/mainmenu/menu_story_mode: "images/mainmenu/menu_story_mode"
 images/mainmenu/menu_freeplay: "images/mainmenu/menu_freeplay"
+images/mainmenu/menu_download: "images/mainmenu/menu_download"
 images/mainmenu/menu_credits: "images/mainmenu/menu_credits"
+images/mainmenu/menu_achievements: "images/mainmenu/menu_achievements"
+images/mainmenu/menu_options: "images/mainmenu/menu_options"
 
 // Story Mode
 images/Menu_Tracks: "images/pt-BR/Menu_Tracks"
