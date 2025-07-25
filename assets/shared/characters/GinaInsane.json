@@ -1,44 +1,44 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [460, -71],
-			"loop": false,
-			"fps": 34,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left"
+			"fps": 34,
+			"name": "left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [470, -72],
-			"loop": false,
-			"fps": 34,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "down"
+			"fps": 34,
+			"name": "down",
+			"indices": []
 		},
 		{
-			"offsets": [460, -70],
 			"loop": false,
-			"fps": 34,
+			"offsets": [460, -70],
 			"anim": "singUP",
-			"indices": [],
-			"name": "up"
-		},
-		{
-			"offsets": [459, -72],
-			"loop": false,
 			"fps": 34,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right"
+			"name": "up",
+			"indices": []
 		},
 		{
-			"offsets": [460, -70],
 			"loop": false,
-			"fps": 24,
+			"offsets": [459, -72],
+			"anim": "singRIGHT",
+			"fps": 34,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [460, -70],
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -48,7 +48,7 @@
 	"healthicon": "gina",
 	"flip_x": false,
 	"healthbar_colors": [216, 85, 142],
-	"camera_position": [-560, 50],
+	"camera_position": [-430, 50],
 	"sing_duration": 6,
 	"scale": 1.1,
 	"_editor_isPlayer": false
