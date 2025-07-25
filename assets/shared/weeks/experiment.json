@@ -1,0 +1,27 @@
+{
+	"songs": [
+		[
+			"The Experiment",
+			"gina",
+			[
+				255,
+				73,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Added in SNF V5",
+	"weekCharacters": [
+		"bf",
+		"bf",
+		"gf"
+	],
+	"storyName": "Your New Week",
+	"weekName": "Custom Week",
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

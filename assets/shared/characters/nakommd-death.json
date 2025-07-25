@@ -1,0 +1,39 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [627, 581],
+			"anim": "firstDeath",
+			"fps": 18,
+			"name": "firstdeath",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [627, 581],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "deathloop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [627, 581],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "deathconfirm",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/nakommdexperiment",
+	"position": [-110, 520],
+	"healthicon": "nako",
+	"flip_x": true,
+	"healthbar_colors": [0, 150, 253],
+	"camera_position": [-600, -600],
+	"sing_duration": 4,
+	"scale": 0.7,
+	"_editor_isPlayer": false
+}

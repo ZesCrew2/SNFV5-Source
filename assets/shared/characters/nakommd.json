@@ -1,0 +1,87 @@
+{
+	"animations": [
+		{
+			"offsets": [-15, -10],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [-13, -11],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [-14, -11],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [-14, -9],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [-15, -7],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [-11, -12],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "lmiss"
+		},
+		{
+			"offsets": [-10, -12],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "umiss"
+		},
+		{
+			"offsets": [-25, -11],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "rmiss"
+		},
+		{
+			"offsets": [-10, -14],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "dmiss"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/nakommdexperiment",
+	"position": [-750, -80],
+	"healthicon": "nako",
+	"flip_x": true,
+	"healthbar_colors": [150, 124, 146],
+	"camera_position": [-200, 150],
+	"sing_duration": 4,
+	"scale": 0.7,
+	"_editor_isPlayer": true
+}
